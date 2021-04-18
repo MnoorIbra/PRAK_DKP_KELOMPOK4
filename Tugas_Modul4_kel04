@@ -2,93 +2,16 @@
 
 using namespace std;
 
-int main() {
-	int pin, menu, saldo = 50000, menu2, nilai, total;
+void bares() {
 	cout << "=======================================" << endl;
-	cout << "    SELAMAT DATANG DI ATM TEK04         " << endl;
-	cout << "        PECAHAN RP 50.000                    " << endl;
-	cout << "=======================================" << endl;
-	cout << "Silahkan masukkan pin anda(5 digit terakhir nim anda): ";
-	cin >> pin;
-	if (pin == 40064) {
-		cout << "Login berhasil, Selamat datang Muhammad Noor Ibrahim";
-		while (pin == 40064) {
-			cout << "Menu: " << endl;
-			cout << "1. Cek saldo " << endl;
-			cout << "2. Simpan tunai " << endl;
-			cout << "3. Tarik tunai " << endl;
-			cout << "4. Keluar " << endl;
-			cout << "Pilih Menu: ";
-			cin >> menu;
-			switch (menu) {
-			case 1:
-				cout << "=====================================" << endl;
-				cout << "        INFORMASI SALDO              " << endl;
-				cout << "SALDO: RP " << saldo << "" << endl;
-				cout << "=====================================" << endl;
-				cout << " Menu: " << endl;
-				cout << "1. Kembali " << endl;
-				cout << "2. Keluar " << endl;
-				cout << "Pilih menu: ";
-				cin >> menu2;
-				switch (menu2) {
-				case 1:
-					break;
-				case 2:
-					return 0;
-				} break;
-			case 2: 
-				cout << "=====================================" << endl;
-				cout << "          Masukkan Nominal " << endl;
-				cout << " Rp. ";
-				cin >> nilai;
-				total = nilai + saldo; 
-				cout << " total saldo anda sekarang adalah " << total << endl;
-				cout << " Menu: " << endl;
-				cout << "1. Kembali " << endl;
-				cout << "2. Keluar " << endl;
-				cout << "Pilih menu: ";
-				cin >> menu2;
-				switch (menu2) {
-				case 1:
-					break;
-				case 2:
-					return 0;
-				} break;
-			case 3:
-				cout << "=================================="<< endl;
-				cout << " MASUKKAN JUMLAH PENARIKAN TUNAI " << endl;
-				cout << "  ( DALAM KELIPATAN RP 50000 ) " << endl;
-				cout << "   MAKSIMAL PENARIKAN 1250000 " << endl;
-				cout << " " << endl;
-				cout << "   RP: ";
-				cin >> nilai;
-				if (nilai>=50000) {
-					total = saldo - nilai;
-					cout << "  Jumalah penarikan anda sebesar RP:  " << nilai << " sisa saldo anda RP: " << total << endl;
-				}
-				else {
-					cout << "  Tidak dapat melakukan penarikan dibawah 50000 " << endl;
-				} cout << " Menu: " << endl;
-				cout << "1. Kembali " << endl;
-				cout << "2. Keluar " << endl;
-				cout << "Pilih menu: ";
-				cin >> menu2;
-				switch (menu2) {
-				case 1:
-					break;
-				case 2:
-					return 0;
-				} break;
-
-			case 4: 
-				return 0;
-
-
-			}
-	}
-	}
-	else {
-		cout << "Maaf Pin yang anda masukkan tidak terdaftar ya ";
-	}
 }
+
+class Myclass {
+public:
+	void myMethod() {
+		cout << " Menu: " << endl;
+		cout << "1. Kembali " << endl;
+		cout << "2. Keluar " << endl;
+		cout << "Pilih menu: ";
+	}
+};
