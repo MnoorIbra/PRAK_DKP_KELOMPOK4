@@ -89,6 +89,6 @@ int main() {
 	}
 	}
 	else {
-		cout << "Maaf Pin yang anda masukkan tidak terdaftar";
+		cout << "Maaf Pin yang";
 	}
 }
