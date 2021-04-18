@@ -15,3 +15,24 @@ public:
 		cout << "Pilih menu: ";
 	}
 };
+
+int main() {
+	Myclass myObj;
+	int pin, menu, saldo = 50000, menu2, nilai, total;
+	bares();
+	cout << "    SELAMAT DATANG DI ATM TEK04         " << endl;
+	cout << "        PECAHAN RP 50.000                    " << endl;
+	bares();
+	cout << "Silahkan masukkan pin anda(5 digit terakhir nim anda): ";
+	cin >> pin;
+	if (pin == 40064) {
+		cout << "Login berhasil, Selamat datang Muhammad Noor Ibrahim";
+		while (pin == 40064) {
+			cout << "Menu: " << endl;
+			cout << "1. Cek saldo " << endl;
+			cout << "2. Simpan tunai " << endl;
+			cout << "3. Tarik tunai " << endl;
+			cout << "4. Keluar " << endl;
+			cout << "Pilih Menu: ";
+			cin >> menu;
+			switch (menu) {
